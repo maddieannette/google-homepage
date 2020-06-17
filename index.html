@@ -1,40 +1,97 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                position: center;
-                top: 0;
-                width: 100%;
-            }
-            li {
-                display: inline;
-                float: left;
-            }
-            a {
-                display: block;
-                padding: 8px; 
-                background-color: white;
-            }
-        </style>
-            <title>Google</title>
-        </head>
-        <body>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Store</a></li>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Box</a></li>
-                <li><a href="">Sign In</a></li>
-            </ul>
-            <img src="images/Screen Shot 2020-06-16 at 4.31.32 PM.png" alt="Google logo">
-            <input type="text" placeholder=" ">
-            <button>Google Search</button>
-            <button>Im Feeling Lucky</button>
-        </body>
-    </html>
+<html>
+
+<head>
+    <style>
+        #nav {
+            width: 100%;
+            float: left;
+            margin: 0;
+            padding: 8px 15px;
+            display: flex;
+        }
+
+        ul {
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: center;
+            top: 0;
+        }
+
+        #nav li {
+            display: inline;
+            float: left;
+            align-items: center;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            font-family: arial, sans-serif;
+            text-decoration: none;
+            padding: 8px;
+            background-color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #000;
+            opacity: 0.75;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .button1 {
+            background-color: #4285f4;
+            border: 1px solid #4285f4;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-family: arial;
+            text-decoration: none;
+            font-size: 13px;
+            margin: 4px 2px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 0px;
+            line-height: 28px;
+            margin-right: 30px;
+            display: inline-block;
+
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            padding: 70px;
+        }
+    </style>
+    <title>Google</title>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <div class="float-right">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">About</a></li>
+                <img src="images/Box.png" alt="Google Apps">
+                <button class="button button1">Sign In</button>
+            </div>
+        </ul>
+    </div>
+    <img src="images/googlelogo.png" alt="Google Logo" class="center">
+    <br>
+    <input type="text" placeholder=" ">
+    <button type="submit">Google Search</button>
+    <button type="submit">Im Feeling Lucky</button>
+</body>
+
+</html>
